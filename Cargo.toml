@@ -1,0 +1,20 @@
+[package]
+name = "faster-purge-rs"
+version = "1.0.0"
+edition = "2024"
+description = "Identifies orphaned mods from FASTER server profiles"
+authors = ["Cabal, Varangian Guard A3"]
+
+[dependencies]
+clap = { version = "4.6.1", features = ["cargo"] }
+quick-xml = { version = "0.40.1", features = ["serialize"] }
+regex = "1.12.3"
+rich_rust = "0.2.1"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_with = "3.20.0"
+
+[dev-dependencies]
+clippy = "0.0.302"
+
+[build-dependencies]
+winres = "0.1"
